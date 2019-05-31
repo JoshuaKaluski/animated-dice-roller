@@ -31,11 +31,12 @@ class Rolldice extends Component {
     }
     render() {
         return (
-        <div>
-            {/*Two Die Components with state passed to each as a face prop*/}
-            <Die face={this.state.die1} />
-            <Die face={this.state.die2} />
-
+        <div className="Rolldice">
+            <div className="Rolldice-container">
+                {/*Two Die Components with state passed to each as a face prop*/}
+                <Die face={this.state.die1} />
+                <Die face={this.state.die2} />
+            </div>
             {/*Button to roll dice*/}
             <button onClick={this.roll}>Roll Dice!</button>
         </div>

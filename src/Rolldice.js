@@ -46,8 +46,8 @@ class Rolldice extends Component {
         <div className="Rolldice">
             <div className="Rolldice-container">
                 {/*Two Die Components with state passed to each as a face prop*/}
-                <Die face={this.state.die1} />
-                <Die face={this.state.die2} />
+                <Die face={this.state.die1} rolling={this.state.rolling}/>
+                <Die face={this.state.die2} rolling={this.state.rolling}/>
             </div>
             {/*Button to roll dice; disabled when rolling*/}
             <button onClick={this.roll} disabled={this.state.rolling}>
